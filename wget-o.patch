@@ -1,0 +1,10 @@
+diff --git a/support/download/wget b/support/download/wget
+index 68bd0b13..beb73632 100755
+--- a/support/download/wget
++++ b/support/download/wget
+@@ -47,4 +47,4 @@ _plain_wget() {
+ # mirror
+ [ -n "${encode}" ] && filename=${filename//\?/%3F}
+ 
+-_wget ${quiet} "${@}" -O "'${output}'" "'${url}/${filename}'"
++_wget ${quiet} "${@}" -o "'${output}'" "'${url}/${filename}'"
