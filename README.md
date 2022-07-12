@@ -102,5 +102,5 @@ docker cp <container id>:/root/buildroot-2022.05/busybox_config buildroot_config
 ```
 
 # Notes
-* This docker image was customized to use axel to download each dependency with multiple connections, you might not need it on your network.
+* This docker image was customized to use axel for downloading dependencies with multiple connections, you might not need it on your network.
 * The configured overlay skips init and goes straight to bash, you'll need to remove it to work with getty (BR2_ROOTFS_OVERLAY and BR2_TARGET_GENERIC_GETTY_OPTIONS)
